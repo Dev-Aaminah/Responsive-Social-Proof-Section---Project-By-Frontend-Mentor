@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.multiple-backgrounds {
+    background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    background-size: auto, auto;
+}
+
+.services {
+    display: grid;
+    grid-template-areas: "left-para right-para";
+    justify-content: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 3%;
+    grid-template-columns: 4fr 5.5fr;
+}
+
+.prod {
+    color: rgb(88, 23, 88);
+    font-weight: 700;
+    font-size: 40px;
+    margin-right: 40%;
+}
+
+.left-para {
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 30px;
+}
+
+.right-para {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: rgb(104, 26, 104);
+    font-weight: 700;
+    font-size: small;
+}
+
+.rating {
+    margin-left: 25px;
+}
+
+.stars {
+    margin-left: 10px;
+    height: 12px;
+    margin-top: 4px;
+}
+
+.reviews,
+.rep-guru,
+.besttect {
+    display: flex;
+    background: #f4f0f0;
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+    margin-top: 3%;
+}
+
+.rep-guru {
+    margin-left: 50px;
+}
+
+.besttect {
+    margin-left: 90px;
+}
+
+.para {
+    margin-top: 10px;
+    color: rgb(169, 147, 169);
+    font-weight: 500;
+    font-size: small;
+    margin-right: 20%;
+}
+
+.customer-reviews {
+    display: flex;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgb(75, 19, 75);
+    color: #fff;
+}
+
+.user1,
+.user2,
+.user3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-icon {
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+}
+
+.user-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-authentication {
+    color: rgb(201, 49, 201);
+}
+
+.by-user {
+    margin-top: 20px;
+}
+
+.user-one {
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.user-two {
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+.user-three {
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+.attribution {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hwb(228 24% 36%);
+}
+
+@media screen and (max-width: 600px) {
+    .multiple-backgrounds {
+        background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+        background-size: auto, auto;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prod {
+        font-size: 32px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .para {
+        margin-left: 60px;
+    }
+
+    .left-para,
+    .right-para {
+        text-align: center;
+        margin: 0;
+    }
+
+    .reviews,
+    .rep-guru,
+    .besttect {
+        width: 90%;
+        margin: 0 auto 15px auto;
+    }
+
+    .reviews,
+    .rep-guru,
+    .besttect {
+        display: grid;
+        width: 100%;
+    }
+
+    #rating1,
+    #rating2,
+    #rating3 {
+        margin-top: 10px;
+        margin-left: -5px;
+    }
+
+    .customer-reviews {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .user {
+        margin: 15px;
+        padding: 30px;
+        border-radius: 8px;
+        background-color: rgb(75, 19, 75);
+        color: #fff;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
